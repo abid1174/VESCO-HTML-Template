@@ -1,0 +1,707 @@
+/*=================================================
+                Default Values
+
+        Font-Family         : Roboto Condensed
+        Greenish Blue       : #34c6d3   (Buttons, Icons, Links, Lines & Background)
+        Steel Grey          : #41464b   (Heading)
+        Blue Bayoux         : #64707b   (Paragraphs)
+        White               : #fff
+        Black               : #000
+===================================================*/
+
+/*============================================
+              --- Reusable Content ---
+=============================================*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+    /*    font-size: 20px;*/
+}
+
+
+h3 {
+    color: #41464b;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+p {
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* ------------  ------------ */
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ------------ Button ------------ */
+
+.btn-general {
+    border: 2px solid #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn-white {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    color: #41464b;
+    background-color: #fff;
+}
+
+.btn-blue {
+    color: #34c6d3;
+    border-color: #34c6d3;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    color: #fff;
+    background-color: #34c6d3;
+}
+
+/* -------- Generic Section Header --------*/
+
+.content-box {
+    padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+/*---- content title underline ----*/
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #34c6d3;
+    margin: 0 auto 40px auto;
+}
+
+/*------- socila icons ------------*/
+
+.social-list {
+    padding-left: 0;
+    list-style: none;
+
+}
+
+.social-list li {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+    margin-right: 6px;
+}
+
+.social-icon i {
+    font-size: 17px;
+}
+
+.icon-gray i {
+    color: #41464b;
+}
+
+.icon-gray i:hover {
+    color: #34c6d3;
+}
+
+.icon-white {
+    color: #fff;
+}
+
+.content-title-white h3 {
+    color: #fff;
+}
+
+/* -------- End of Generic Code --------*/
+
+/*============================================
+              --- Home ---
+=============================================*/
+
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    height: 100%;
+    background-image: url(../images/bg-home.jpg);
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#home-heading h3 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+}
+
+/*============================================
+              --- Services ---
+=============================================*/
+
+#content-box {
+    padding: 60px 0;
+}
+
+.service-item {
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.service-item .service-item-icon {
+    box-sizing: border-box;
+}
+
+.service-item-icon i {
+    padding: 15px;
+    float: left;
+    margin-right: 25px;
+    color: #34c6d3;
+    height: 75px;
+    width: 75px;
+    text-align: center;
+
+}
+
+.service-item-description {
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.service-item-icon i:hover,
+.service-item-icon i:active {
+    background: #34c6d3;
+    color: #fff;
+}
+
+/*============================================
+              --- About ---
+=============================================*/
+
+#about {}
+
+#about-bg-diagonal {
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url(../images/bg-about.jpg);
+    border-left: 200px solid white;
+    border-top: 700px solid transparent;
+}
+
+#about-content-box {
+    float: left;
+    height: 700px;
+}
+
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about .content-title h3 {
+    text-align: left;
+}
+
+#about .content-title .content-title-underline {
+    margin-left: 0;
+}
+
+#about-desc p {
+    margin-bottom: 30px;
+}
+
+#about-btn {}
+
+
+/*============================================
+              --- Work ---
+=============================================*/
+
+#work .content-box {
+    padding-bottom: 0px;
+}
+
+.row.no-gutters [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    transition: transform .5s ease;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+/*============================================
+              --- Team ---
+=============================================*/
+
+#team-members {
+    padding-bottom: 60px;
+}
+
+.team-member {
+    margin: 0 15px;
+}
+
+.team-member-info {
+    padding: 10px 0 30px 0;
+    text-align: center;
+}
+
+h4.team-member-name {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+
+h4.team-member-designation {
+    color: #34c6d3;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+#team .content-box {
+    padding-bottom: 0;
+}
+
+/*============================================
+              --- Testimonial ---
+=============================================*/
+
+#testimonial-section .content-box {
+    padding-bottom: 0px;
+}
+
+#testimonial-cover {
+    background-image: url(../images/bg-testimonials.jpg);
+}
+
+#testimonial-section .content-box {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#customers-testimonials {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial img {
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+.testimonial blockquote {
+    border: none;
+    padding: 6px 150px;
+    position: relative;
+}
+
+.testimonial blockquote p {
+    color: #fff;
+    font-style: italic;
+    font-family: Georgia, sans-serif;
+}
+
+.testimonial blockquote::before,
+.testimonial blockquote::after {
+    font-size: 80px;
+    font-family: Georgia, sans-serif;
+    position: absolute;
+}
+
+.testimonial blockquote::before {
+    content: "\201C";
+    color: #fff;
+    top: -20px;
+    left: 100px;
+    ;
+}
+
+.testimonial blockquote::after {
+    content: "\201D";
+    color: #fff;
+    top: 20px;
+    right: 100px;
+}
+
+.testimonial-author p {
+    color: #fff;
+}
+
+.testimonial-author p strong {
+    display: block;
+}
+
+/*============================================
+              --- Pricing ---
+=============================================*/
+
+#pricing-section {
+    padding-bottom: 60px;
+}
+
+#pricing-section .content-box {
+    padding-bottom: 0;
+}
+
+.box-container {
+    background: #555;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.pricing-box {
+    padding: 50px 0;
+    border: 3px solid #34c6d3;
+    margin: 40px 0;
+}
+
+h4.pricing-title {
+    background: #34c6d3;
+    display: inline-block;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 50px 0;
+}
+
+h3.pricing-value {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0 0 25px 0;
+}
+
+h3.pricing-value sup {
+    font-size: 28px;
+    font-weight: normal;
+    vertical-align: super;
+}
+
+ul.pricing-specification {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 60px 0;
+}
+
+ul.pricing-specification li p {
+    font-weight: 400;
+    line-height: 22.8571px;
+    text-transform: uppercase;
+}
+
+.blue-box {
+    padding: 90px 0;
+    margin: 0;
+    background-color: #34c6d3;
+}
+
+.blue-box h4.pricing-title {
+    color: #34c6d3;
+    background: #fff;
+}
+
+.blue-box .pricing-specification li p {
+    color: #fff;
+}
+
+/*============================================
+              --- Stats ---
+=============================================*/
+
+#stats-cover {
+    background-image: url(../images/bg-stats.jpg);
+}
+
+#stats .content-box {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.stats-item {
+    padding: 100px 0;
+}
+
+.stats-item i {
+    color: #34c6d3;
+}
+
+.stats-item h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+
+.stats-item p {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+/*============================================
+              --- Clients ---
+=============================================*/
+
+.client {
+    padding: 40px 0;
+}
+
+/*============================================
+              --- Footer ---
+=============================================*/
+
+/* ---------- Contact -------------*/
+
+footer {
+    background-color: #41464b;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-left h3,
+.contact-right h3 {
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    background: url(../images/world-map.png) no-repeat;
+    background-size: contain;
+}
+
+address {
+    color: #fff;
+}
+
+address strong,
+.phone-fax-email strong {
+    letter-spacing: 1px;
+}
+
+footer i.fa-facebook:hover {
+    color: #3b5999;
+}
+
+footer i.fa-twitter:hover {
+    color: #55acee;
+}
+
+footer i.fa-youtube-play:hover {
+    color: #cd201f;
+}
+
+footer i.fa-google-plus:hover {
+    color: #dd4b39;
+}
+
+form .form-control {
+    background: transparent;
+    border-radius: 0;
+    border-color: #fff;
+    font-weight: 300;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* ---------- copyright -------------*/
+
+#footer-bottom {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+#copy-rights p {
+    margin: 0;
+    color: #fff;
+}
+
+#footer-menu {
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#footer-menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+}
+
+#footer-menu ul li {
+    display: inline-block;
+
+}
+
+#footer-menu a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#footer-menu a:hover {
+    color: #34c6d3;
+}
+
+/*============================================
+              --- Navigation ---
+=============================================*/
+
+.navbar {
+    padding: 20px 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.vesco-top-nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 7px 0;
+}
+
+.vesco-nav-wrapper {
+    padding: 0 85px;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav > li > a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    background: none;
+    color: #34c6d3;
+}
+
+.navbar-toggle {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 0;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-collapse {
+    max-height: none!important;
+}
+
+.vesco-top-nav ul.navbar-nav > li.active > a {
+    color: #34c6d3;
+    background: transparent;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    font-size: 22px;
+    padding: 6px 12px;
+    font-weight: 700;
+    display: none;
+}
+
+/*============================================
+              --- Animation ---
+=============================================*/
+
+/*-------- Home -----------*/
+
+#home-cover,
+#home-heading,
+#home-btn {
+    animation-duration: .5s;
+}
+
+#home-cover {
+    animation-delay: .1s;
+}
+
+#home-heading {
+    animation-delay: .5s;
+}
+
+#home-btn {
+    animation-delay: 1s;
+}
